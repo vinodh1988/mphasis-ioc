@@ -11,6 +11,11 @@ Sale vsale;
 	super();
 	this.manufacture = manufacture;
     }
+	
+	public void init(){
+		System.out.println("Van instantiated");
+		System.out.println(vsale);
+	}
 
 
 	@Override

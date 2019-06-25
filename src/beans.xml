@@ -11,14 +11,26 @@
 
 <context:annotation-config></context:annotation-config>
 <context:component-scan base-package="com.ioc.system"></context:component-scan>
-
+<context:component-scan base-package="com.ioc.lifecycle"></context:component-scan>
+  
+  <bean id="fp" class="com.ioc.system.FittingProcess"></bean>
+  <bean id="tp" class="com.ioc.system.TestingProcess"></bean>
+  <bean id="fup" class="com.ioc.system.FuelingProcess"></bean>
+  
   <bean id="cm" class="com.ioc.system.CarManufacturing"></bean>
   <bean id="vm" class="com.ioc.system.VanManufacturing"></bean>
   <bean id="vsale" class="com.ioc.system.VSale2"></bean>
-    <bean id="car" class="com.ioc.system.SUV">
+    <bean id="car" class="com.ioc.system.SUV"  destroy-method="destroyed" scope="prototype">
        <property name="manufacture" ref="cm"></property>
+       <property name="processess">
+            <list>
+                <ref bean="fp"></ref>
+                <ref bean="fup"></ref>
+                <ref bean="tp"></ref>
+            </list>
+       </property>
     </bean>
-    <bean id="van" class="com.ioc.system.Van">
+    <bean id="van" class="com.ioc.system.Van" init-method="init">
       <constructor-arg name="manufacture" ref="vm"></constructor-arg>
     
     </bean>

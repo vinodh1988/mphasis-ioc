@@ -11,9 +11,10 @@ public class RunAPP {
 	  ApplicationContext ac=new ClassPathXmlApplicationContext("beans.xml");
 	  
 	 // Vehicle v=new Car();
-	  
+	 
 	  Vehicle v= (Vehicle)ac.getBean("car");
 	  v.info();
+	  System.out.println("----------------------------------------------");
 	  v=(Vehicle)ac.getBean("van");
 	  v.info();
 	

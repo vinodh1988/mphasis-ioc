@@ -64,5 +64,9 @@
 	<classpathentry kind="lib" path="D:/SpringCourse/spring-framework-4.1.6.RELEASE/libs/spring-websocket-4.1.6.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="D:/SpringCourse/commons-logging-1.1.2.jar"/>
 	<classpathentry kind="lib" path="D:/SpringCourse/slf4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/VinodhKumar/Downloads/aspectjrt.jar/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="D:/SpringCourse/aopalliance-.jar"/>
+	<classpathentry kind="lib" path="D:/SpringCourse/aspectj-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/SpringCourse/aspectjweaver-1.9.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

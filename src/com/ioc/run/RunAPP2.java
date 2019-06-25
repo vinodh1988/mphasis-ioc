@@ -12,10 +12,8 @@ public class RunAPP2 {
     	
     	Bank b=(Bank)ac.getBean("abc");
     	b.establish();
-    	System.out.println(b.hashCode());
-    	b=(Bank)ac.getBean("abc");
-    	b.establish();
-    	System.out.println(b.hashCode());
+    
+    	System.out.println("-----------------------------------------");
     	
     	 b=(Bank)ac.getBean("xyz");
     	b.establish();
